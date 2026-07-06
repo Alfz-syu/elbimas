@@ -1,4 +1,4 @@
-import { Wallet } from "lucide-react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export function Logo({
@@ -12,14 +12,14 @@ export function Logo({
 }) {
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
-      <span
-        className={cn(
-          "flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground",
-          markClassName
-        )}
-      >
-        <Wallet className="size-5" aria-hidden="true" />
-      </span>
+      <Image
+        src="/icon.svg"
+        alt=""
+        width={34}
+        height={28}
+        priority
+        className={cn("h-9 w-auto", markClassName)}
+      />
       <span
         className={cn(
           "font-heading text-xl font-bold tracking-tight",

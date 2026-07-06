@@ -16,10 +16,7 @@ export default function AuthLayout({
           className="pointer-events-none absolute -top-40 -right-40 size-125 rounded-full bg-sidebar-primary/10 blur-3xl"
         />
         <Link href="/" className="w-fit">
-          <Logo
-            markClassName="bg-sidebar-primary text-sidebar-primary-foreground"
-            textClassName="text-sidebar-foreground"
-          />
+          <Logo textClassName="text-sidebar-foreground" />
         </Link>
 
         <div className="space-y-8">

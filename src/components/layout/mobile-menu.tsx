@@ -36,10 +36,7 @@ export function MobileMenu() {
         <SheetHeader className="border-b border-sidebar-border px-4 py-4">
           <SheetTitle asChild>
             <Link href="/dashboard" onClick={() => setOpen(false)}>
-              <Logo
-                markClassName="bg-sidebar-primary text-sidebar-primary-foreground"
-                textClassName="text-sidebar-foreground"
-              />
+              <Logo textClassName="text-sidebar-foreground" />
             </Link>
           </SheetTitle>
         </SheetHeader>
