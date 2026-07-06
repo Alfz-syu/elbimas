@@ -27,10 +27,7 @@ export default async function DashboardLayout({
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-sidebar-border bg-sidebar text-sidebar-foreground lg:flex">
         <div className="flex h-16 items-center border-b border-sidebar-border px-5">
           <Link href="/dashboard">
-            <Logo
-              markClassName="bg-sidebar-primary text-sidebar-primary-foreground"
-              textClassName="text-sidebar-foreground"
-            />
+            <Logo textClassName="text-sidebar-foreground" />
           </Link>
         </div>
         <div className="flex-1 overflow-y-auto px-3 py-4">
@@ -46,7 +43,7 @@ export default async function DashboardLayout({
         <header className="sticky top-0 z-30 flex h-16 items-center gap-2 border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/80 sm:px-6">
           <MobileMenu />
           <Link href="/dashboard" className="lg:hidden">
-            <Logo className="gap-2" markClassName="size-8" textClassName="text-lg" />
+            <Logo className="gap-2" markClassName="h-8" textClassName="text-lg" />
           </Link>
           <div className="ml-auto flex items-center gap-1">
             <ThemeToggle />

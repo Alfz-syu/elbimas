@@ -40,8 +40,15 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: "Elbimas",
   },
+  manifest: "/manifest.webmanifest",
   icons: {
-    apple: "/icons/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180" }],
+    shortcut: "/favicon.ico",
   },
 };
 
